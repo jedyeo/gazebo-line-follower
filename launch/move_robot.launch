@@ -1,0 +1,8 @@
+<launch>
+   <!-- My Package launch file -->
+   <node pkg="enph353_ros_lab"
+         type="move_robot.py"
+         name="move_robot" 
+         output="screen">
+   </node>
+</launch>

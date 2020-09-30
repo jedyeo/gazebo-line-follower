@@ -1,0 +1,12 @@
+material track{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture monza.png
+            }
+        }   
+    }
+}

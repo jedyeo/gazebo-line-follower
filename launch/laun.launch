@@ -1,0 +1,15 @@
+<launch>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+	    <env name="GAZEBO_RESOURCE_PATH" value="$(find enph353_ros_lab)"/>
+	    <env name="GAZEBO_MODEL_PATH" value="$(find enph353_ros_lab)/models"/>
+	    <arg name="world_name" value="$(find enph353_ros_lab)/worlds/353_ros_lab.world"/>
+	    <arg name="gui" value="true"/>
+    </include>
+
+	<include file="$(find enph353_ros_lab)/launch/move_robot.launch">
+	</include>
+
+	<include file="$(find enph353_ros_lab)/launch/robot.launch">
+		<arg name="init_pose" value="-x -0 -y 0.0 -z 1.0 -R 0.0 -P 0.0 -Y 0.4" />
+	</include>
+</launch>

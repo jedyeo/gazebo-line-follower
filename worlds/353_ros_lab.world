@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://track</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <gui>
+      <camera name="user_camera">
+        <pose>0.0 0.0 4.0 0.0 1.57 0.0</pose>
+      </camera>
+    </gui>
+  </world>
+</sdf>
